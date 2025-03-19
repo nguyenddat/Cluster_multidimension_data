@@ -73,9 +73,9 @@ def multi_lineplot(df, title):
     if not motion_data.empty:
         ax2 = ax1.twinx()  # Trục y thứ hai
         ax2.scatter(motion_data['epochtime'], motion_data['value'], 
-                    color='black', marker='s', s=50, alpha=0.6, label='Motion (binary)')
+                    color='black', marker='o', s=10, alpha=0.6, label='Motion (binary)')
         ax2.set_ylabel('Motion (0 or 1)', fontsize=12)
-        ax2.legend(fontsize=10, loc='upper right')
+        ax2.legend(fontsize=10, loc='lower right')
 
     ax1.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d\n%H:%M'))
     ax1.xaxis.set_major_locator(mdates.AutoDateLocator())
