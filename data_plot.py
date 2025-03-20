@@ -125,7 +125,7 @@ def lineplot(time, value, data):
 
     plt.figure(figsize = (10, 4))
     # plt.plot(time, value, marker="x", color = "red")
-    plt.scatter(time, value, marker="o", color="red")
+    plt.scatter(time, value, marker=".", color="blue")
     
     plt.gca().xaxis.set_major_locator(mdates.MonthLocator())
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%b %Y'))
